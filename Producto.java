@@ -17,5 +17,10 @@ public abstract class Producto {
 		this.descripcion = descripcion;
 		this.precio = precio;
 	}
-	
+	/**
+	 * @return the precio
+	 */
+	public int getPrecio() {
+		return precio;
+	}
 }
