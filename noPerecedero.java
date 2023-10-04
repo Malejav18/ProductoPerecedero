@@ -22,24 +22,24 @@ public class noPerecedero extends Producto{
 			return tipo;
 	}
 	
-	public void calcularPrecio (int tipo) {
-		int precio = 0;
+	public int calcularPrecio (int tipo) {
+		int valorPagar=0;
 		int aumento;
 		switch (tipo) {
 		case 1:
 			aumento=this.precio*3/100;
-			precio = this.precio+aumento;
+			valorPagar = this.precio+aumento;
 			break;
 		case 2:
 			aumento=this.precio*2/100;
-			precio = this.precio+aumento;
+			valorPagar = this.precio+aumento;
 			break;
 		case 3:
 			aumento=this.precio*1/100;
-			precio = this.precio+aumento;
+			valorPagar = this.precio+aumento;
 			break;
 		}
-		this.precio = precio;
+		return valorPagar;
 	}
 
 	/**
@@ -52,6 +52,5 @@ public class noPerecedero extends Producto{
 		super(codigo, descripcion, precio);
 		this.clasificacion = clasificacion;
 	}
-	
 
 }

@@ -20,7 +20,15 @@ public abstract class Producto {
 	/**
 	 * @return the precio
 	 */
+
+	public void calcularPrecio(int diasCaducar) {
+		// TODO Auto-generated method stub
+		
+	}
 	public int getPrecio() {
 		return precio;
+	}
+	public void setPrecio(int precio) {
+		this.precio = precio;
 	}
 }
