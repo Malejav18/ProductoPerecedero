@@ -1,11 +1,10 @@
-package ProductoPerecedero;
+package TiendaP;
 
 public abstract class Producto {
 	protected int codigo;
 	protected String descripcion;
 	protected int precio;
-	
-	public abstract void calcularPrecio();
+
 	/**
 	 * @param codigo
 	 * @param descripcion
@@ -21,14 +20,13 @@ public abstract class Producto {
 	 * @return the precio
 	 */
 
-	public void calcularPrecio(int diasCaducar) {
-		// TODO Auto-generated method stub
-		
-	}
 	public int getPrecio() {
 		return precio;
 	}
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
+
+	public abstract int calcularPrecioVenta(int cantidad);
+		// TODO Auto-generated method stub}
 }

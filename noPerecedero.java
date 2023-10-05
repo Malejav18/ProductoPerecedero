@@ -1,6 +1,7 @@
-package ProductoPerecedero;
+package TiendaP;
 
 public class noPerecedero extends Producto{
+	
 	private String clasificacion;
 	
 	private String comprobarTipo (int clasificacion) {
@@ -22,19 +23,20 @@ public class noPerecedero extends Producto{
 			return tipo;
 	}
 	
-	public int calcularPrecio (int tipo) {
+	@Override
+	public int calcularPrecioVenta (int cantidad) {
 		int valorPagar=0;
 		int aumento;
-		switch (tipo) {
-		case 1:
+		switch (clasificacion) {
+		case "Super alta calidad":
 			aumento=this.precio*3/100;
 			valorPagar = this.precio+aumento;
 			break;
-		case 2:
+		case "Alta calidad":
 			aumento=this.precio*2/100;
 			valorPagar = this.precio+aumento;
 			break;
-		case 3:
+		case "Media calidad":
 			aumento=this.precio*1/100;
 			valorPagar = this.precio+aumento;
 			break;
@@ -48,9 +50,12 @@ public class noPerecedero extends Producto{
 	 * @param precio
 	 * @param clasificacion
 	 */
-	public noPerecedero(int codigo, String descripcion, int precio, String clasificacion) {
+	public noPerecedero(int codigo, String descripcion, int precio, int c) {
 		super(codigo, descripcion, precio);
-		this.clasificacion = clasificacion;
+		this.clasificacion = comprobarTipo(c);
 	}
+	
+	
+	
 
 }

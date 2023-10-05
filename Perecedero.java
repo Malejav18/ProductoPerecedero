@@ -1,4 +1,4 @@
-package ProductoPerecedero;
+package TiendaP;
 
 public class Perecedero extends Producto{
 	private int diasCaducar;
@@ -31,6 +31,14 @@ public class Perecedero extends Producto{
 		}
 		return valorPagar;
 	}
+
+	@Override
+	public String toString() {
+		return "Perecedero [diasCaducar=" + diasCaducar + ", codigo=" + codigo + ", descripcion=" + descripcion
+				+ ", precio=" + precio + "]";
+	}
+	
+	
 	
 	
 }
