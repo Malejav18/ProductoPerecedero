@@ -32,7 +32,7 @@ public class Tienda {
 	
 	public void venta () {
 		String productoV="carne";
-		for (int i=0; i<3; i++) {
+		for (int i=0; i<6; i++) {
 			if (productoV==producto.getNombre()) {
 				System.out.println(producto.toString());
 		}
