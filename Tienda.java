@@ -15,6 +15,12 @@ public class Tienda {
 			Producto producto4 =new Producto(21, "pasta", 25000, 1);
 			Producto producto5 =new Producto(22, "arroz", 10000, 2);
 			Producto producto6 =new Producto(23, "frijol", 5000, 3);
+		listaProductos.add(producto1);
+		listaProductos.add(producto2);
+		listaProductos.add(producto3);
+		listaProductos.add(producto4);
+		listaProductos.add(producto5);
+		listaProductos.add(producto6);
 	    }
 	}
 			
